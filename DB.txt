@@ -1,0 +1,15 @@
+drop database MedicalChatbot;
+
+create database MedicalChatbot;
+use MedicalChatbot;
+
+create table register(username varchar(50) primary key,
+password varchar(50),
+contact varchar(12),
+email varchar(50),
+address varchar(90));
+
+create table history(username varchar(50),
+question varchar(300),
+answer varchar(2300),
+chat_date varchar(40));
